@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <style>
+    .bottom {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      padding: 30px;
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <h1 class="text-light text-center p-3">GIPHY PARTY</h1>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-md-5 offset-md-3">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="gif" aria-describedby="emailHelp" placeholder="Search Gifs">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button type="submit" id="search-gifs" class="btn btn-primary w-100">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-fluid my-3 text-center">
+    <div id="gif-area" class="row">
+
+    </div>
+  </div>
+
+  <div class="text-center bottom">
+    <button type="submit" id="remove-gifs" class="btn btn-danger px-5">Clear All Gifs</button>
+    <p class="text-warning pt-4">Powered By GIPHY</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
